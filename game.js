@@ -28,7 +28,7 @@ $(document).ready(function() {
   
   Kanye.prototype.specialAttack = function() {
     console.log("special")
-    var hitOrMiss = Math.floor((Math.random() * 1) + 1); 
+    var hitOrMiss = Math.floor((Math.random() * 4) + 1); 
     if (hitOrMiss === 1) {
       $("#overlay").fadeTo(1000, 1);
       $("#Kanye").animate({right: '80%'}, 3000, function() {
@@ -61,7 +61,6 @@ $(document).ready(function() {
   }
 
   Kanye.prototype.die = function() {
-   
   }
   
   Kanye.prototype.checkHealth = function(health) {
@@ -236,11 +235,19 @@ $(document).ready(function() {
       if(monsterHealth === 0) {
         monsterInstance.die();
         kanyeHealth = 99;
+        setTimeout(function() {
+          $("#cover").fadeTo(1000, 1);
+          $("#cover").css("z-index", "1000");
+        }, 5000)
+        
       }
       
       if(kanyeHealth === 0) {
         kanyeInstance.die();
-        
+        setTimeout(function() {
+          $("#cover").fadeTo(1000, 1);
+          $("#cover").css("z-index", "1000");
+        }, 5000)
       }
     });
  
