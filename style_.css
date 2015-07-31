@@ -1,0 +1,70 @@
+#img  {
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  left: 500px;
+  top: 100px;
+  position: absolute;
+  
+}
+p  {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  font-size: 500%;
+  color: red;
+}
+
+body  {
+  background: http://3.bp.blogspot.com/-qH5hrGSSUS4/TwYBGu3-wTI/AAAAAAAAALo/WfuQF0RouEs/s1600/IMG_3784.JPG;
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+  font-family: pricedown;
+  width: 70%;
+  height: 70%;
+  color: red;
+  height: 25%
+  font-size: 100%;
+  text-decoration: underline;
+  border-style: solid;
+  border-width: 5px;
+    
+}
+
+{margin:0px;}
+#content
+{color:#ff0000;}
+
+h1  {
+  width: 100%;
+  height: 100%;
+  
+  
+  
+}
+
+head  {
+  color: white;
+}
+
+#stuff  {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 0;
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+  background-color: black;
+  font-size: 300%;
+  
+}
+
+  
+}

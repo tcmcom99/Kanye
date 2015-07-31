@@ -1,0 +1,305 @@
+@import url(http://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+/* http://jsfiddle.net/jtbowden/ykbgT/light/
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  color: white;
+  background-color: #1C6BA0 ;
+  background-image:url("Arch.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 50px;
+  font-family: Ubuntu, sans-serif;
+  overflow: hidden;
+
+}
+
+ #overlay{
+   width: 1280px;
+   height: 800px;
+   position: absolute;
+   right: 0px;
+  opacity: 0.46;
+  z-index: -1;
+  visibility: visible;
+}
+
+
+/******* HEADER *******/
+
+h1{
+  padding-top: 7px;
+}
+
+h2{
+  opacity: 0.5;
+}
+
+#top{
+  background-color: #5C5C5C;
+  border-bottom: solid 4px #474747;
+  width: 100%;
+  height: 75px;
+  margin-top: -50px;
+  background: repeating-linear-gradient(
+  -55deg,
+  #222,
+  #222 3px,
+  #333 3px,
+  #333 5px
+);
+}
+
+#monsterHealth {
+ font-size: 2em;
+  background-color: red;
+}
+
+#kanyeHealth {
+  font-size: 2em;
+  background-color: red;
+}
+
+/**** TURN MOVE ****/
+
+
+#moveMessage {
+ text-align: center; 
+ color: red;
+ font-family: Sigmar One ,impact, sans-serif;
+ font-size: 2em;
+ position: relative;
+ top: -70px;
+ visibility: visible;
+}
+
+
+
+#TurnSymbol{
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  margin-top: 50px;
+  visibility: hidden;
+}
+#turn{
+  visibility: hidden;
+}
+
+
+/****** KANYE *****/
+
+@keyframes bobble {
+    from {top: 180px;}
+    to {top: 200px;}
+}
+
+#Kanye {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 180px;
+  right: 60%;
+  opacity: 1;
+  animation-name: bobble;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; 
+}
+
+
+/****** ENEMY *****/
+@keyframes bobble2 {
+    from {top: 130px;}
+    to {top: 150px;}
+}
+
+#enemy{
+  width: 425px;
+  height: 350px;
+  position:absolute;
+  top: 150px;
+  left: 60%;
+  animation-name: bobble2;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  z-index: 10;
+}
+
+/*  #enemy:hover{
+  transition: transform 1s ease;
+  transform: rotate(-360deg); 
+}  */
+
+/**** ENEMY EFFECTS *****/
+
+#Glacier{
+  width: 430px;
+  height: 430px;
+  position: absolute;
+  right: 100px;
+  top: 0px;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+   animation-name: bobble3;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  z-index: 11;
+  opacity: 0;
+}
+
+@keyframes bobble3 {
+    from {top: 90px;}
+    to {top: 120px;}
+}
+
+/**** BOTTOM CONTAINERS FOR HEALTH AND STUFF ****/
+
+#EnemyH{
+  float: right;
+   border-left: solid 4px #474747;;
+}
+
+#PlayerH {
+  float: left;
+  border-right: solid 4px #474747;;
+}
+
+#EnemyH, #PlayerH{
+  margin-top: 100px;
+  height: 300px;
+  width: 25%;
+  background-color: #5C5C5C;
+  border-top: solid 4px red;
+  position: relative;
+  
+   background: repeating-linear-gradient(
+  -55deg,
+  #222,
+  #222 3px,
+  #333 3px,
+  #333 5px
+);
+  bottom: 0%;
+}
+
+/**** PLAYER CONTAINER ****/
+
+.attack {
+  margin: 20px;
+}
+
+#mainAttack, #secondaryAttack {
+  font-size: 2em;
+  width: 100%;
+  border: solid 3px 474747;
+  border-radius: 46px;
+  font-family: ubuntu, sans-serif;
+  color: #FFF;
+  background-color: #5C5C5C;
+}
+
+/* #p1, #p2  {
+  position: absolute;
+  left: 500px;
+  transition: left 1s;
+}
+
+#p1  {
+  top: 300px;
+  height: 200px;
+}
+
+#p2  {
+  top: 320px;
+  height: 200px;
+} */
+
+
+/***** START SCREEN *****/
+
+
+#cover{
+  z-index: 200;
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  top: -10px;
+  background: linear-gradient(#005CE6, #85D6FF 80%, #FFF);
+  text-align: center;
+  
+   background: repeating-linear-gradient(
+  -55deg,
+  #222,
+  #222 10px,
+  #333 10px,
+  #333 20px
+);  
+}
+
+#cover button{
+  font-family: Ubuntu;
+  font-size: 3.5em;
+  color: #FFF;
+}
+
+
+#cover #BillyStart{
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  top: 25px;
+  right: 650px;
+  
+    animation-name: bobble4;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bobble4 {
+    from {top: 25px;}
+    to {top: 35px;}
+}
+
+#cover #Title{
+  color: #FFF;
+  font-size: 6em;
+}
+
+#cover #SecondTitle{
+  color: #FFF;
+  font-size: 3em;
+}
+
+#cover #Start{
+  width: 600px;
+  height: 150px;
+  background-color: #000;
+  margin: 0 auto;
+  margin-top: 80px;
+  border-radius: 46px;
+  z-index: 1000;
+}
+
+#cover #Start:hover{
+  
+}
+
+.death {
+  opacity: 0;
+  z-index: -2000;
+}
+
+

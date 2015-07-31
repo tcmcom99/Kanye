@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html>
+
  <head>
-   <title> Kanye vs the World </title>
-   <script src="jquery-1.11.3.min.js"></script>
+   <title> Little Fish. Big Dreams. </title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>title</title>
  </head>
- <body>
-   <h1> KANYE VS (VARIOUS SEA CREATURES) </h1>
-   <h4> By Tommy, Cole, and Sam </h4>
-   
   
- </body>
- <script src="game.js"></script>
- <script 
+ <body>
+     <div id="cover">
+    
+      <img id="BillyStart" src="BillyStart.png">
+      
+      <p id="Title">BILLY PILGRIM<p>
+      <p id="SecondTitle">The Story of a Small Fish in a Large Universe</p>
+      
+     
+      <button id="Start"> START</button>
+    
+      <img id="hint1" class="hint" src="">
+      <img class="hint" src="">
+      <img class="hint" src="">
+    </div>
+   
+   
+   
+    <div id="top"> 
+     <h1> Billy Pilgrim </h1>
+     <h3>The Story of a Little Fish in a Big Universe</h3>
+   </div> 
+   <div>
+     <img id="overlay" src="pattern.png"> 
 
+     <img id="TurnSymbol" src="Turn.png">
+      <button id="turn">Turn</button>
+   </div>
+   <div class="game-container">
+
+     
+    <p id="moveMessage">Billy's Turn<p>
+
+     
+   <img id="Kanye" src="TheChosenOne.png">
+
+   <img id="enemy" src="Starmie.png">
+   <img id="Glacier" src="Glacier.png">
+<!--   <div id="p1">
+   <img id="particle1" src="http://i.imgur.com/QoKcMkC.png" alt="p1">
+     </div>
+     <div id="p2">
+   <img id="particle2" src="http://i.imgur.com/TvcyzRK.png" alt="p2">
+     </div> -->
+   
+    
+
+  
+     <div id="PlayerH">
+       <p id="kanyeHealth"></p>
+       <p class="attack"><button  id="mainAttack">HeadButt</button></p>
+       <p class="attack"><button id="secondaryAttack">Ice Blast</button></p>
+       <p class="billy-turn">Billy's Turn</p>
+     </div>
+     
+     
+     
+     <div id="EnemyH">
+       <p id="monsterHealth"></p>
+       <p class="monster-message"></p>
+     </div>
+     <div id="moveleft">
+       <img src="Starmie.png">
+     </div>
+     
+     
+     
+     
+     
+     
+   </div> <!-- Game container ends -->
+  
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   <script src="game.js"></script>
+<!--    <script src="test.js"></script>
+   <script src="test2.js"></script> -->
+  
+  </body>
 </html>
